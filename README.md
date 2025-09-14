@@ -6,22 +6,6 @@ This README covers what the project does, how it works, how to run it locally, c
 
 ---
 
-# Table of contents
-
-* [Demo](#demo)
-* [Features](#features)
-* [Files / Project structure](#files--project-structure)
-* [How it works (overview)](#how-it-works-overview)
-* [Quick start — run locally](#quick-start--run-locally)
-* [Usage](#usage)
-* [Configuration & customization](#configuration--customization)
-* [Performance tips](#performance-tips)
-* [Troubleshooting](#troubleshooting)
-* [Potential improvements](#potential-improvements)
-* [Credits & license](#credits--license)
-
----
-
 # Demo
 
 > Type some text into the input and press **Create** (or Enter). The particles will morph into the text, hold briefly, then morph back to the rotating sphere.
@@ -93,16 +77,6 @@ This README covers what the project does, how it works, how to run it locally, c
 ### Option B — Local static server (recommended)
 
 From the project folder:
-
-**Using Python (if you have Python 3):**
-
-```bash
-# macOS / Linux
-python3 -m http.server 8000
-
-# Windows (PowerShell)
-python -m http.server 8000
-```
 
 Open `http://localhost:8000`.
 
@@ -199,35 +173,6 @@ Open `script.js` to modify:
 
 ---
 
-# Example snippets
-
-**Change number of particles**
-
-```js
-// script.js
-const count = 6000; // fewer particles for better mobile performance
-```
-
-**Change font used for text sampling**
-
-```js
-// script.js -> createTextPoints
-ctx.font = `bold ${fontSize}px 'Inter', Arial, sans-serif`;
-```
-
-**Serve locally with Python**
-
-```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
----
-
-# License & credits
-
-**Author / Contributors:** You (the project owner) — add your name and GitHub link here.
-
 **Libraries used**
 
 * \[Three.js] — WebGL 3D library
@@ -238,21 +183,8 @@ python3 -m http.server 8000
 ```
 MIT License
 
-Copyright (c) YEAR Your Name
+Copyright (c) 2025 develper21
 
 Permission is hereby granted...
 ```
-
-*(Replace `YEAR` and `Your Name` accordingly.)*
-
 ---
-
-# Final notes
-
-This project is an excellent base for interactive hero sections, creative landing pages, or procedural visuals. If you'd like, I can:
-
-* Turn this README into a polished GitHub README with badges and a GIF example.
-* Suggest or implement a performance-optimized version (single-tween interpolation or GPU morph).
-* Add deploy instructions to GitHub Pages and a minimal `package.json` and build setup.
-
-Which of those would you like next?#sphere_particle
